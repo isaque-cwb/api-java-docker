@@ -358,8 +358,8 @@ src/main/java/com/example/demo/
 
 ## 📝 Notas Importantes
 
-1. **Token JWT**: Válido por 24 horas (configurável em `application.properties`)
-2. **Refresh Token**: Válido por 30 dias
+1. **Token JWT**: Válido por 1 minuto (configurável em `application.properties`)
+2. **Refresh Token**: Válido por 5 minutos
 3. **Banco de Dados**: Persiste em arquivo `./data/demo.mv.db`
 4. **Formato CPF**: Aceita com ou sem pontuação
 5. **Formato CEP**: Armazenado sem hífen, retornado com formatação

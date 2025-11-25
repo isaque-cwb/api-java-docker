@@ -17,7 +17,7 @@ public class RefreshTokenService {
 
     private final RefreshTokenRepository refreshTokenRepository;
 
-    @Value("${jwt.refresh.expiration:604800000}") // 7 dias em ms
+    @Value("${jwt.refresh.expiration:300000}") // 5 minutos em ms
     private Long refreshTokenDurationMs;
 
     public RefreshToken createRefreshToken(User user) {
