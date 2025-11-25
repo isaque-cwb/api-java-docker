@@ -1,0 +1,20 @@
+{
+  "name": "Java 17 & Maven (Spring Boot)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-spring-boot",
+    "vscjava.vscode-java-debug",
+    "pivotal.vscode-boot-dev-pack",
+    "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [8080, 5005],
+  "postCreateCommand": "mvn -v",
+  "remoteUser": "vscode"
+}

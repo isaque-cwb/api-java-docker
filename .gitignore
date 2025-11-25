@@ -1,0 +1,25 @@
+# Maven / Java
+/target/
+/.settings/
+/.classpath
+/.project
+
+# VSCode
+.vscode/
+.devcontainer/.vscode/*
+
+# IDEs
+.idea/
+*.iml
+
+# H2 data (não comitar banco embutido)
+data/
+*.db
+*.mv.db
+*.trace.db
+
+# Logs
+*.log
+
+# Environment
+.env
