@@ -1,8 +1,7 @@
 {
-  "name": "Java 17 & Maven (Spring Boot)",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "Java 21 (local image)",
+  "image": "eclipse-temurin:21-jdk",
+  "workspaceFolder": "/workspace",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
@@ -15,6 +14,6 @@
     "ms-azuretools.vscode-docker"
   ],
   "forwardPorts": [8080, 5005],
-  "postCreateCommand": "mvn -v",
-  "remoteUser": "vscode"
+  "postCreateCommand": "mvn -v || true",
+  "remoteUser": "root"
 }
